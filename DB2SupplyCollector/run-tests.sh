@@ -5,10 +5,10 @@ echo "--------Waiting for the container initialization--------"
 sleep 300
 
 echo "--------Copying the seed data script file to the container--------"
-docker cp test/data.sql db2-database:/database
+docker cp DB2SupplyCollectorTests/tests/data.sql db2-database:/database
 
 echo "--------Executing the seed data script in the container--------"
-docker exec -i db2-database sh -c "su - db2inst1 -c 'db2 -vtf /DB2SupplyCollectorTests/tests/data.sql'"
+docker exec -i db2-database sh -c "su - db2inst1 -c 'db2 -vtf /database/data.sql'"
 
 echo "--------Running test cases--------"
 dotnet test

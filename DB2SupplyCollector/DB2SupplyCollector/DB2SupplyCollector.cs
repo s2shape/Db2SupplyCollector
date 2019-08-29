@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.Linq;
 
-namespace DB2SupplyCollector
+namespace Db2SupplyCollector
 {
-    public class DB2SupplyCollector : SupplyCollectorBase
+    public class Db2SupplyCollector : SupplyCollectorBase
     {
         public override List<string> CollectSample(DataEntity dataEntity, int sampleSize)
         {
@@ -181,7 +181,7 @@ namespace DB2SupplyCollector
 
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }

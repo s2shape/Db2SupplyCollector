@@ -21,7 +21,7 @@ create table test_data_types (
 insert into test_data_types(bool_field, char_field, varchar_field, smallint_field, int_field, bigint_field, decfloat_field, real_field, double_field, date_field, time_field, timestamp_field, xml_field)
 values(True, 'char!', 'varchar!', 1, 299792458, 9223372036854775807, 6.626, 1.280649, 6.022140761234567, '2019-08-13', '17:40:00', '2019-08-13 17:40:00', '<Hello>world</Hello>');
 
-RUNSTATS ON TABLE test_data_types
+RUNSTATS ON TABLE test_data_types;
 
 create table test_field_names (
    id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -35,7 +35,7 @@ create table test_field_names (
 insert into test_field_names(low_case, upcase, camelcase, "Table", "SELECT")
 values(0,0,0,0,0);
 
-RUNSTATS ON TABLE test_field_names
+RUNSTATS ON TABLE test_field_names;
 
 create table test_index (
    id int NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -57,7 +57,7 @@ values('Friday');
 insert into test_index(name)
 values('Saturday');
 
-RUNSTATS ON TABLE test_index
+RUNSTATS ON TABLE test_index;
 
 create table test_index_ref (
    id int NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -69,4 +69,4 @@ values(1);
 insert into test_index_ref(index_id)
 values(5);
 
-RUNSTATS ON TABLE test_index_ref
+RUNSTATS ON TABLE test_index_ref;

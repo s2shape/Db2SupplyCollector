@@ -1,20 +1,20 @@
 using System;
 using Xunit;
-using DB2SupplyCollector;
+using Db2SupplyCollector;
 using S2.BlackSwan.SupplyCollector.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DB2SupplyCollectorTests
+namespace Db2SupplyCollectorTests
 {
-    public class DB2SupplyCollectorTests
+    public class Db2SupplyCollectorTests
     {
-        private readonly DB2SupplyCollector.DB2SupplyCollector _instance;
+        private readonly Db2SupplyCollector.Db2SupplyCollector _instance;
         public readonly DataContainer _container;
 
-        public DB2SupplyCollectorTests()
+        public Db2SupplyCollectorTests()
         {
-            _instance = new DB2SupplyCollector.DB2SupplyCollector();
+            _instance = new Db2SupplyCollector.Db2SupplyCollector();
             _container = new DataContainer()
             {
                 ConnectionString = _instance.BuildConnectionString("db2inst1", "mydb2container123", "testdb", "localhost", 50000)

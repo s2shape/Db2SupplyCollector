@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DB2SupplyCollector\DB2SupplyCollector.csproj" />
+    <ProjectReference Include="..\Db2SupplyCollector\Db2SupplyCollector.csproj" />
   </ItemGroup>
 
 </Project>

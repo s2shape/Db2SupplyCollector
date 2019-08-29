@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB2SupplyCollector", "DB2SupplyCollector\DB2SupplyCollector.csproj", "{86DDE564-6252-4878-9773-98093121C146}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db2SupplyCollector", "Db2SupplyCollector\Db2SupplyCollector.csproj", "{86DDE564-6252-4878-9773-98093121C146}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB2SupplyCollectorTests", "DB2SupplyCollectorTests\DB2SupplyCollectorTests.csproj", "{12902BD3-BB4B-4063-A2BA-D599531474EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db2SupplyCollectorTests", "Db2SupplyCollectorTests\Db2SupplyCollectorTests.csproj", "{12902BD3-BB4B-4063-A2BA-D599531474EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
