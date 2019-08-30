@@ -8,8 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="IBM.Data.DB2.Core-lnx" Version="1.3.0.100" Condition="'$(OSTYPE)' == 'linux-gnu'" />
-    <PackageReference Include="IBM.Data.DB2.Core-osx" Version="1.3.0.100" Condition="'$(OSTYPE)' == 'darwin18'" />
-    <PackageReference Include="IBM.Data.DB2.Core" Version="1.3.0.100"  Condition="'$(OSTYPE)' != 'linux-gnu' AND '$(OSTYPE)' != 'darwin18'" />
+    <PackageReference Include="IBM.Data.DB2.Core-osx" Version="1.3.0.100" Condition="'$(OS)' == 'Unix'" />
+    <PackageReference Include="IBM.Data.DB2.Core" Version="1.3.0.100"  Condition="'$(OS)' == 'Windows_NT'" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
