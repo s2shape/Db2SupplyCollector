@@ -7,17 +7,24 @@ using System.Linq;
 
 namespace Db2SupplyCollectorTests
 {
-    public class Db2SupplyCollectorTests
+    public class Db2SupplyCollectorTests : IClassFixture<LaunchSettingsFixture>
     {
         private readonly Db2SupplyCollector.Db2SupplyCollector _instance;
         public readonly DataContainer _container;
+        private LaunchSettingsFixture _fixture;
 
-        public Db2SupplyCollectorTests()
+        public Db2SupplyCollectorTests(LaunchSettingsFixture fixture)
         {
+            _fixture = fixture;
             _instance = new Db2SupplyCollector.Db2SupplyCollector();
             _container = new DataContainer()
             {
-                ConnectionString = _instance.BuildConnectionString("db2inst1", "mydb2container123", "testdb", "localhost", 50000)
+                ConnectionString = _instance.BuildConnectionString(
+                    Environment.GetEnvironmentVariable("DB2_USER"),
+                    Environment.GetEnvironmentVariable("DB2_PASS"),
+                    Environment.GetEnvironmentVariable("DB2_DB"),
+                    Environment.GetEnvironmentVariable("DB2_HOST"),
+                     Int32.Parse(Environment.GetEnvironmentVariable("DB2_PORT")))
             };
         }
 

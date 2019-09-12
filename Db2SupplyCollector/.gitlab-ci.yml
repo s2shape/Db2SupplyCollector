@@ -1,0 +1,31 @@
+image: microsoft/dotnet:latest
+
+stages:
+  - build
+  - test
+
+variables:
+  DB2_HOST: localhost
+  DB2_PORT: "50000"
+  DB2_USER: db2inst1
+  DB2_PASS: mydb2container123
+  DB2_DB: testdb
+
+before_script:
+  - dotnet restore
+
+build:
+  stage: build
+  script:
+    - dotnet build
+
+test:
+  stage: test
+
+  services:
+    - name: itsplus/s2shape-db2-test
+      alias: db2
+
+  script:
+    - dotnet build
+    - dotnet test
