@@ -1,10 +1,12 @@
-echo "--------Creating the container--------"
-
 export DB2_HOST=localhost
 export DB2_PORT=50000
 export DB2_USER=db2inst1
 export DB2_PASS=mydb2container123
 export DB2_DB=testdb
+
+cd Db2SupplyCollector
+
+echo "--------Creating the container--------"
 
 docker run -d --name db2-database --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=$DB2_PASS -e DBNAME=$DB2_DB ibmcom/db2
 

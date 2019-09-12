@@ -4,6 +4,8 @@ MAINTAINER burilovmv@gmail.com
 
 ADD data.sql docker-entrypoint-initdb.d/
 
+ENV LICENSE accept
+
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN ls -la *.sh; chmod +x *.sh; ls -la *.sh
 

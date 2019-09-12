@@ -10,6 +10,8 @@ variables:
   DB2_USER: db2inst1
   DB2_PASS: mydb2container123
   DB2_DB: testdb
+  DB2INST1_PASSWORD: $DB2_PASS
+  DBNAME: $DB2_DB
 
 before_script:
   - dotnet restore
