@@ -13,12 +13,11 @@ variables:
   DB2INST1_PASSWORD: $DB2_PASS
   DBNAME: $DB2_DB
 
-before_script:
-  - dotnet restore
-
 build:
   stage: build
   script:
+    - cd Db2SupplyCollector
+    - dotnet restore
     - dotnet build
 
 test:
@@ -29,5 +28,7 @@ test:
       alias: db2
 
   script:
+    - cd Db2SupplyCollector
+    - dotnet restore
     - dotnet build
     - dotnet test
