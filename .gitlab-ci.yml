@@ -16,7 +16,6 @@ variables:
 build:
   stage: build
   script:
-    - cd Db2SupplyCollector
     - dotnet restore
     - dotnet build
 
@@ -28,7 +27,6 @@ test:
       alias: db2
 
   script:
-    - cd Db2SupplyCollector
     - dotnet restore
     - dotnet build
     - dotnet test
