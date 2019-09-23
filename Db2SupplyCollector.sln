@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29215.179
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db2SupplyCollector", "Db2SupplyCollector\Db2SupplyCollector.csproj", "{86DDE564-6252-4878-9773-98093121C146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Db2SupplyCollector", "Db2SupplyCollector\Db2SupplyCollector.csproj", "{86DDE564-6252-4878-9773-98093121C146}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db2SupplyCollectorTests", "Db2SupplyCollectorTests\Db2SupplyCollectorTests.csproj", "{12902BD3-BB4B-4063-A2BA-D599531474EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Db2SupplyCollectorTests", "Db2SupplyCollectorTests\Db2SupplyCollectorTests.csproj", "{12902BD3-BB4B-4063-A2BA-D599531474EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db2SupplyCollectorLoader", "Db2SupplyCollectorLoader\Db2SupplyCollectorLoader.csproj", "{FEA62293-BC74-4725-B96D-64C037A88A07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{12902BD3-BB4B-4063-A2BA-D599531474EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12902BD3-BB4B-4063-A2BA-D599531474EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12902BD3-BB4B-4063-A2BA-D599531474EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA62293-BC74-4725-B96D-64C037A88A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA62293-BC74-4725-B96D-64C037A88A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA62293-BC74-4725-B96D-64C037A88A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA62293-BC74-4725-B96D-64C037A88A07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
