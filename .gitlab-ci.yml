@@ -1,4 +1,4 @@
-image: microsoft/dotnet:latest
+image: itsplus/s2shape-test-harness
 
 stages:
   - build
