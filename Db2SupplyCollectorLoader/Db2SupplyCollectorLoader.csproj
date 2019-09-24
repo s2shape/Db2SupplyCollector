@@ -9,4 +9,8 @@
     <PackageReference Include="SupplyCollectorDataLoader" Version="1.0.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Db2SupplyCollector\Db2SupplyCollector.csproj" />
+  </ItemGroup>
+
 </Project>
