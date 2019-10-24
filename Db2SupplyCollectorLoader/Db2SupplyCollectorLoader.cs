@@ -36,7 +36,7 @@ namespace Db2SupplyCollectorLoader
                 var sb = new StringBuilder();
                 sb.Append("CREATE TABLE ");
                 sb.Append(dataEntities[0].Collection.Name);
-                sb.Append("\n");
+                sb.Append("(\n");
                 sb.Append("id_field int PRIMARY KEY GENERATED ALWAYS AS IDENTITY");
 
                 foreach (var dataEntity in dataEntities) {
