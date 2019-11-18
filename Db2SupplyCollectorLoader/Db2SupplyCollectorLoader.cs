@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using System.Text;
 using IBM.Data.DB2.Core;
 using S2.BlackSwan.SupplyCollector.Models;
